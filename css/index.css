@@ -1,0 +1,398 @@
+/*
+* @Author: admin
+* @Date:   2017-09-11 09:37:35
+* @Last Modified by:   admin
+* @Last Modified time: 2017-09-12 09:59:31
+*/
+@font-face {
+  font-family: 'iconfont';  /* project id 411572 */
+  src: url('https://at.alicdn.com/t/font_411572_nwyzio9f9ib8d7vi.eot');
+  src: url('https://at.alicdn.com/t/font_411572_nwyzio9f9ib8d7vi.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_411572_nwyzio9f9ib8d7vi.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_411572_nwyzio9f9ib8d7vi.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_411572_nwyzio9f9ib8d7vi.svg#iconfont') format('svg');
+}
+.iconfont {
+
+    font-family:"iconfont" !important;
+
+    font-size:16px;
+
+    font-style:normal;
+
+    -webkit-font-smoothing: antialiased;
+
+    -webkit-text-stroke-width: 0.2px;
+
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+header{
+	width: 100%;
+	height: 40px;
+	background-color: #444;
+}
+main{
+	max-width: 1024px;
+	height: 100%;
+	background-color: #444;
+	margin:  0 auto;
+
+}
+.head-zi{
+	float: right;
+	line-height: 40px;
+	font-size: 12px;
+	color: #000;
+	font-family: "苹方";
+}
+nav{
+	width: 100%;
+	height: 44px;
+	background-color: #000;
+
+}
+nav main{
+	text-align: justify;  /*  文本两端对齐 */
+	background-color: #000;
+}
+/* 解决text-align: justify;BUG问题，
+只能指定为行内块元素 */
+nav main:after{
+	content: "";
+	display: inline-block;
+	width: 100%;
+	font-size: 0;
+	line-height: 0;
+}
+nav a{
+	display: inline-block;
+	font-size: 14px;
+	line-height: 44px;
+	color: #fff;
+	font-family: "苹方";
+}
+nav i{
+	color: #fff;
+}
+#banner{
+	width: 100%;
+	height: 500px;
+	/* background-color: red; */
+	position: relative;
+}
+.banner-img{
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/shouji.1.png');
+	background-size: cover;
+	background-position: center;
+}
+.banner-zi{
+	width: 100%;
+	height: 217px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	align-content: center;
+}
+.banner-zi .zi2{
+	width: 100%;
+	font-size:40px;
+	color: #fff;
+	font-family: "苹方";
+	
+}
+.banner-zi .zi1{
+	width: 100%;	
+	font-size:46px;
+	color: #fff;
+	font-family: "苹方";
+}
+.lunbo{
+	width: 200px;
+	height: 10px;	
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.lunbo1{
+	width: 50px;
+	height: 2px;
+	background-color: #f5f5f5;
+	float: left;
+	margin-left: 5px;
+}
+.liebiao{
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	margin-top: 2px;
+	overflow: hidden;
+	/* overflow-y: scroll; */
+}
+/* .liebiao:after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	clear: both;
+} */
+.liebiao1{
+	width: 25%;
+	height: 268px;
+	background-image: url('../img/qgaaa3.jpg');
+	background-size: cover;
+	background-position: center;
+	float: left;
+}
+.liebiao2{
+	background-image: url('../img/pga.jpg');
+}
+.liebiao3{
+	background-image: url('../img/3.jpg');
+}
+
+.liebiao4{
+	background-image: url('../img/renshou1.png');
+}
+footer{
+	background-color: #f2f2f2;
+	/* width: 100%; */
+	/* height: 500px; */
+}
+footer main{
+	max-width: 1024px;
+	background-color: #f2f2f2;
+	position: relative;
+}
+.dibu1{
+/* 	width: 100%;
+	height: 69px; */
+	padding: 17px 0;
+	border-bottom: 1px #e0e0e0 solid;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+}
+.dibu1-zi{
+	display: inline-block;
+	font-size: 12px;
+	color: #999;
+	font-family:"苹方";
+	width: 100%;
+}
+.dibu2{
+	border-bottom: 1px #e0e0e0 solid;
+	padding-bottom: 10px;
+}
+.dibu2-zi{
+	font-size: 12px;
+	color: #999;
+	font-family:"苹方";
+}
+.dibu2-zi1{
+	color: blue;
+}
+.dibu3{
+	width: 100%;
+	padding: 15px 0 ;
+}
+.dibu3-zi{
+	display: inline-block;
+	font-size: 12px;
+	color: #999;
+	font-family:"苹方";
+}
+.dibu3-zi1{
+	display: inline-block;
+	font-size: 12px;
+	color: #999;
+	font-family:"苹方";
+	border-right: 1px #e0e0e0 solid;
+	padding: 0 10px 0;
+}
+.dibu3-zi3{
+	float: right;
+}
+.dibu3-zi2{
+	border: 0;
+}
+.dibu4-zi{
+	/* display: inline-block; */
+	font-size: 12px;
+	color: #999;
+	font-family:"苹方";
+}
+.dibu4{
+	width: 100%;
+	background-color: #f2f2f2;
+	padding: 30px 0 50px;
+	overflow: hidden;
+}
+.dibu4-1{
+	width: 20%;
+	height: 100%;
+	float: left;
+	/* display: inline-block; */
+}
+.dibu41{
+	margin-left: 0;
+}
+.dibu4-1 .p2{
+	display: block;
+	font-size: 12px;
+	color: #999;
+	font-family: "苹方";
+	margin-top: 5px;
+}
+.dibu4-1 .p1{
+	display: block;
+	font-size: 14px;
+	color: #000;
+	font-family: "苹方";
+}
+.dibu4-1 .p3{
+	margin-top:40px;
+}
+.dibu5{
+	width: 100%;
+	height: 360px;
+	background-color: #f2f2f2;
+/* 	position: absolute;
+	left: 0;
+	top: 70px;
+ */
+}
+.dibu5-zi{
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px #e0e0e0 solid;
+	font-size: 16px;
+	line-height: 50px;
+	color: #000;
+	font-family: "苹方";
+
+
+}
+
+
+
+
+
+
+
+/* 屏幕<1024 */
+@media screen and (max-width: 1024px){
+	main{
+		padding-right: 24px;
+	}
+	nav main{
+		padding-left: 24px;
+	}
+	#banner{
+		height:  460px;
+		background-image: url('../img/banner2.png'); 
+
+	}
+	#banner .zi2{
+		font-size: 34px;
+	}
+	#banner .zi1{
+		font-size: 40px;
+	}
+	.liebiao1{
+		width: 50%;
+		background-image: url('../img/qgaaa2.jpg');
+	}
+	.liebiao2{
+		width: 50%;
+		background-image: url('../img/pga3.jpg');
+	}
+	
+	.liebiao3{
+		width: 50%;
+		background-image: url('../img/2.jpg');
+	}
+	.liebiao4{
+		width: 50%;
+		background-image: url('../img/renshou2.png');
+	}
+	footer main{
+		padding-left: 24px;
+		padding-right: 24px;
+
+	}
+}
+
+/* 屏幕大于767 */
+@media screen and (min-width: 767px){
+	.nav-big{
+		display: block;
+	}
+	.nav-small{
+		display: none;
+	}
+	.dibu4{
+		display: block;
+	}
+	.dibu5{
+		display: none;
+	}
+
+}
+/* 屏幕<767 */
+@media screen and (max-width: 767px){
+	.nav-big{
+		display: none;
+	}
+	.nav-small{
+		display: block;
+	}
+	#banner{
+		height: 380px;
+		background-image: url('../img/banner3.png');
+	}
+	#banner .zi2{
+		font-size: 28px;
+	}
+	#banner .zi1{
+		font-size: 34px;
+	}
+	
+	.liebiao1{
+		width: 100%;
+		background-image: url('../img/pgaaa1.jpg');
+	}
+	.liebiao2{
+		width:100%;
+		background-image: url('../img/pga4.jpg');
+	}
+	.liebiao3{
+		width:100%;
+		background-image: url('../img/1.jpg');
+	}
+	.liebiao4{
+		width:100%;
+		background-image: url('../img/renshou2.png');
+	}
+	.dibu4{
+		display: none;
+	}
+	.dibu5{
+		display: block;
+	}
+	.dibu3-zi3{
+		display: block;
+	}
+	.dibu2{
+		border: 0;
+	}
+}
